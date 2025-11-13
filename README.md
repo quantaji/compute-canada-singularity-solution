@@ -1,5 +1,5 @@
 # A personal exampler for using Singularity/Apptainer on Compute Canada
-- Disclaimer: This note container very personal experience.
+- Disclaimer: This note contains very personal experience.
   
 This is a guide for how to use Singularity container in SLURM system like those for some of the Compute Canada clusters. 
 1. The first purpose for this is that, these clusters use network storage and is very inefficient for loading small size but huge amount of files. Singularity is a container tool that pack all softwares in the environment into one single `.sif` file.
