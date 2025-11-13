@@ -1,11 +1,13 @@
-# compute-canada-singularity-solution
+# A personal exampler for using Singularity/Apptainer on Compute Canada
+- Disclaimer: This note container very personal experience.
+  
 This is a guide for how to use Singularity container in SLURM system like those for some of the Compute Canada clusters. 
-1. The first purpose for this is that, these clusters use network storage and is very inefficient for loading small size but huge amount of data. Singularity is a container tool that pack all softwares in the environment into one single `.sif` file.
+1. The first purpose for this is that, these clusters use network storage and is very inefficient for loading small size but huge amount of files. Singularity is a container tool that pack all softwares in the environment into one single `.sif` file.
 2. The second purpose is to more freely use any versions of software. Usually these clusters maintain its own software stack starting from a gcc compiler, and everything is compiled from it. The available versions or combinations of available version can not be fullfilled if you want to replicate some others' work that have a specific set of environment. Therefore, it is better to use Anaconda and pypi where the versions are the most complete.
 
 ## Overall guideline
 The stratagy is to
-- compute-canada-singularity-solution
+- A personal exampler for using Singularity/Apptainer on Compute Canada
   - Overall guideline
   - Build the docker file
     - Install system packages
