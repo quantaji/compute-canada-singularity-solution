@@ -7,8 +7,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
         git curl wget make binutils nano unzip \
         libosmesa6 libgl1 \
         python3 python3-pip python3-dev build-essential && \
-        rm -rf /var/lib/apt/lists/* && \
-        bash /env/remove_egl_glx.sh && bash /env/check_removal.sh
+        rm -rf /var/lib/apt/lists/* 
 RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && \
     chmod +x /Miniconda3-latest-Linux-x86_64.sh && \
     /Miniconda3-latest-Linux-x86_64.sh -b -p /miniconda3 && \
